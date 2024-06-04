@@ -1,0 +1,35 @@
+body {
+	font-family: sans-serif;
+	text-align: center;
+}
+
+.qrcode {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#input,#output,#generated {
+	display: none;
+}
+
+input[type=text],textarea {
+	width: 300px;
+}
+
+.clickor {
+	font-size: small;
+	margin-top: 0.5em;
+}
+
+img {
+	display: inline !important;
+}
+
+hr {
+	width: 20%;
+}
+
+h1,h2 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}

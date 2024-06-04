@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Delta Chat Onboarder</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script type="text/javascript" src="lib/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" src="lib/qrcode.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+  <div id='welcome'>
+    <h1>Delta Chat onboarding<span id='forwhat'></span></h1>
+  </div>
+
+  <div id='jshint'>
+    This page requires Javascript.
+  </div>
+
+  <div id='input'>
+    <form id='input-form'>
+      <p>Who this onboarding page is generated for:</br><input type='text' id='input-forwhat' placeholder='my awesome friends (optional)'/></p>
+      <p>What chatmail instance should I offer:</br><input type='text' id='input-chatmail' value='nine.testrun.org'/></p>
+      <p>Invite code:<br/><textarea id='input-invitation' placeholder='OPENPGP4FPR:....'></textarea></p>
+      <p><input type='submit' value='Generate!'/></p>
+    </form>
+    <p id='generated'>Generated Link: <a id='generated-href'><span id='generated-href'></span></a></p>
+  </div>
+
+  <div id='output'>
+    <h2>1) Download the client</h2>
+    <a id='download-href'><div id='download'></div></a>
+    <p class='clickor'>(Click/tap or scan)</p>
+
+    <h2>2) Get a free chatmail account on <span id='chatmail-host'></span></h2>
+    <a id='chatmail-href'><div id='chatmail'></div></a>
+    <p class='clickor'>(Click/tap or scan)</p>
+
+    <h2>3) Accept this invitation</h2>
+    <a id='invitation-href'><div id='invitation'></div></a>
+    <p class='clickor'>(Click/tap or scan)</p>
+
+    <hr/>
+    <p>Generate another invitation: <a id='another'></a></p>
+  </div>
+</body>
+</html>
