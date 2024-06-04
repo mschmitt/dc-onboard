@@ -18,6 +18,22 @@ $(document).ready(function(){
 		});
 		$('#download-href').attr('href', download_url);
 
+		var googleplay_url = 'https://play.google.com/store/apps/details?id=chat.delta';
+		var googleplay_qrcode = new QRCode(document.getElementById('googleplay'), {
+			text: googleplay_url,
+			width: qrsize,
+			height: qrsize
+		});
+		$('#googleplay-href').attr('href', googleplay_url);
+
+		var applestore_url = 'https://apps.apple.com/us/app/delta-chat/id1459523234';
+		var applestore_qrcode = new QRCode(document.getElementById('applestore'), {
+			text: applestore_url,
+			width: qrsize,
+			height: qrsize
+		});
+		$('#applestore-href').attr('href', applestore_url);
+
 		var chatmail_host = 'nine.testrun.org';
 		if (getUrlVars()['chatmail']){
 			chatmail_host = decodeURIComponent(getUrlVars()['chatmail']);

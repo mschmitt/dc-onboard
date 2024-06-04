@@ -21,6 +21,20 @@ input[type=text],textarea {
 	margin-top: 0.5em;
 }
 
+.downloadtitle {
+	margin-bottom: 0.5em;
+}
+
+#downloadsection {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#applestore,#googleplay,#download {
+	margin: 10px;
+}
+
 img {
 	display: inline !important;
 }
