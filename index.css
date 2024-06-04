@@ -3,11 +3,6 @@ body {
 	text-align: center;
 }
 
-.qrcode {
-	margin-left: auto;
-	margin-right: auto;
-}
-
 #input,#output,#generated {
 	display: none;
 }
@@ -25,7 +20,7 @@ input[type=text],textarea {
 	margin-bottom: 0.5em;
 }
 
-#downloadsection {
+#downloadsection,#chatmail-container,#invitation-container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -33,10 +28,6 @@ input[type=text],textarea {
 
 .downloadqrcode {
 	margin: 10px;
-}
-
-img {
-	display: inline !important;
 }
 
 hr {
