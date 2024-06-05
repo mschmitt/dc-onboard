@@ -12,6 +12,8 @@ input[type=text],textarea {
 }
 
 .clickor {
+	font-size: larger;
+	font-weight: bold;
 	margin-top: 0.5em;
 }
 
