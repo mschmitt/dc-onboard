@@ -18,6 +18,7 @@ input[type=text],textarea {
 }
 
 .downloadtitle {
+	margin-top: 0em;
 	margin-bottom: 0.5em;
 }
 
